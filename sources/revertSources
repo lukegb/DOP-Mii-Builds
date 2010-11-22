@@ -1,0 +1,3 @@
+#!/bin/sh
+svn update -r 144 mainline
+svn update -r 144 wiibrew

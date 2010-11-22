@@ -25,7 +25,42 @@ echo "extern const u8" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`
 echo "extern const u8" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"[];" >> `(echo Titles.xml | tr . _)`.h
 echo "extern const u32" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`_size";" >> `(echo Titles.xml | tr . _)`.h		
 Boot2.cpp
-/home/lukegb/dop-mii-builds/sources/mainline/source/Boot2.cpp:3:20: fatal error: gccore.h: No such file or directory
-compilation terminated.
-make[1]: *** [Boot2.o] Error 1
-make: *** [build] Error 2
+ChannelMatrix.cpp
+Controller.cpp
+DiscLight.cpp
+Error.cpp
+FileSystem.cpp
+Gecko.cpp
+Http.cpp
+Identify.cpp
+IOSMatrix.cpp
+Main.cpp
+/home/lukegb/dop-mii-builds/sources/mainline/source/Main.cpp:60:2: warning: #warning REMINDER: change ProgramVersion in include/Global.h
+Nand.cpp
+Network.cpp
+Nus.cpp
+Patcher.cpp
+RuntimeIOSPatch.cpp
+Scripting.cpp
+/home/lukegb/dop-mii-builds/sources/mainline/source/Scripting.cpp: In static member function 'static u8 Scripting::RunScript(const char*)':
+/home/lukegb/dop-mii-builds/sources/mainline/source/Scripting.cpp:120:14: warning: passing NULL to non-pointer argument 1 of 'Title::Title(u64)'
+Settings.cpp
+SysCheck.cpp
+SysMenuMatrix.cpp
+System.cpp
+SysTitle.cpp
+Title.cpp
+Tools.cpp
+Video.cpp
+WiiMote.cpp
+rijndael.c
+sha1.c
+sysconf.c
+UsbStorage.c
+linking ... mainline.elf
+output ... mainline.dol
+make[1]: Entering directory `/home/lukegb/dop-mii-builds/sources/mainline'
+WiiMote.cpp
+linking ... mainline.elf
+output ... mainline.dol
+make[1]: Leaving directory `/home/lukegb/dop-mii-builds/sources/mainline'

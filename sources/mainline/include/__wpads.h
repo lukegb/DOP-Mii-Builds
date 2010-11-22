@@ -1,1 +1,1 @@
-#define __WPADS_ADDR 0x800d2a60
+#define __WPADS_ADDR 0x800d269c
