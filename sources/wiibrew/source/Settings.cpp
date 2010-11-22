@@ -39,9 +39,16 @@ void Settings::Load()
 	FILE *file = NULL;
 	char *value;
 
-	if (!SD::Mount()) return;	
+	SD::Mount();
+	USB::Mount();
 	
 	file = File::OpenBinary("sd:/config/DOP-Mii.cfg");
+	if (!file)
+    file = File::OpenBinary("sd:/apps/DOP-Mi/DOP-Mii.cfg"); 
+	if (!file)
+	file = File::OpenBinary("usb:/config/DOP-Mii.cfg");
+	if (!file)
+	file = File::OpenBinary("usb:/apps/DOP-Mii/DOP-Mii.cfg");
 	if (!file) goto final;
 
 	xTop = mxmlLoadFile(NULL, file, MXML_NO_CALLBACK);

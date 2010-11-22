@@ -1,0 +1,1 @@
+Makefile:7: *** "Please set DEVKITPPC in your environment. export DEVKITPPC=<path to>devkitPPC".  Stop.

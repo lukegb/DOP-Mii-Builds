@@ -28,7 +28,7 @@ int HTTP::TcpSocket()
 {
 	s32 s, res;
 
-	s = net_socket(PF_INET, SOCK_STREAM, 0);
+	s = net_socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
 	if (s < 0) 
 	{
 		printf ("net_socket failed: %d\n", s);

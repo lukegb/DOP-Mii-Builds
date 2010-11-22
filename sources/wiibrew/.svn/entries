@@ -1,15 +1,15 @@
 10
 
 dir
-144
+147
 http://dop-mii.googlecode.com/svn/branches/WiiBrewEdition
 http://dop-mii.googlecode.com/svn
 
 
 
-2010-11-21T16:06:35.705358Z
-142
-gb.luke@gmail.com
+2010-11-22T21:19:33.858627Z
+147
+castlevania7689@yahoo.com
 has-props
 
 
@@ -140,39 +140,11 @@ Lunatik.CN
 
 7697
 
-DOP-Mii.vcproj
-file
-
-
-
-
-2010-11-22T05:05:20.230017Z
-05b07f0a549db824d91e5d03cba311f9
-2010-07-05T14:56:56.313703Z
-102
-Lunatik.CN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7215
+tools
+dir
+
+source
+dir
 
 LICENSE.txt
 file
@@ -208,11 +180,39 @@ Lunatik.CN
 
 35819
 
-source
-dir
-
-tools
-dir
+DOP-Mii.vcproj
+file
+
+
+
+
+2010-11-22T05:05:20.230017Z
+05b07f0a549db824d91e5d03cba311f9
+2010-07-05T14:56:56.313703Z
+102
+Lunatik.CN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7215
 
 DOP-Mii.pnproj
 file
