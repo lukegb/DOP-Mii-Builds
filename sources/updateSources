@@ -5,6 +5,8 @@
 # svn checkout http://dop-mii.googlecode.com/svn/branches/WiiBrewEdition/ wiibrew
 # ---
 # DEVKITPRO IS INSTALLED
+export DEVKITPRO=/opt/devkitpro
+export DEVKITPPC=/opt/devkitpro/devkitPPC
 
 echo Cleaning log dir...
 rm -rf logs
