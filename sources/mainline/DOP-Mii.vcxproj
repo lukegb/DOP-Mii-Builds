@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}</ProjectGuid>
+    <RootNamespace>DopIOS-MOD</RootNamespace>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean &amp; make debug</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(PROJECTFILE).dol</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HW_RVL;DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">include;source;libs\mxml\include;$(DKP_HOME)\libogc\include;$(DKP_HOME)\libogc\include\grrlib;$(DKP_HOME)\libogc\include\bte;$(DKP_HOME)\libogc\include\di;$(DKP_HOME)\libogc\include\mad;$(DKP_HOME)\libogc\include\modplay;$(DKP_HOME)\libogc\include\ogc;$(DKP_HOME)\libogc\include\sdcard;$(DKP_HOME)\libogc\include\wiiuse;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(PROJECTFILE).dol</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>
+      </Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Boot2.cpp" />
+    <ClCompile Include="source\ChannelMatrix.cpp" />
+    <ClCompile Include="source\Controller.cpp" />
+    <ClCompile Include="source\DiscLight.cpp" />
+    <ClCompile Include="source\Error.cpp" />
+    <ClCompile Include="source\FileSystem.cpp" />
+    <ClCompile Include="source\Gecko.cpp" />
+    <ClCompile Include="source\Http.cpp" />
+    <ClCompile Include="source\Identify.cpp" />
+    <ClCompile Include="source\IOSMatrix.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\Nand.cpp" />
+    <ClCompile Include="source\Network.cpp" />
+    <ClCompile Include="source\Nus.cpp" />
+    <ClCompile Include="source\Patcher.cpp" />
+    <ClCompile Include="source\rijndael.c" />
+    <ClCompile Include="source\Settings.cpp" />
+    <ClCompile Include="source\sha1.c" />
+    <ClCompile Include="source\SysCheck.cpp" />
+    <ClCompile Include="source\SysMenuMatrix.cpp" />
+    <ClCompile Include="source\System.cpp" />
+    <ClCompile Include="source\SysTitle.cpp" />
+    <ClCompile Include="source\Title.cpp" />
+    <ClCompile Include="source\Tools.cpp" />
+    <ClCompile Include="source\UsbStorage.c" />
+    <ClCompile Include="source\Video.cpp" />
+    <ClCompile Include="source\WiiMote.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Boot2.h" />
+    <ClInclude Include="include\ChannelMatrix.h" />
+    <ClInclude Include="include\Controller.h" />
+    <ClInclude Include="include\DiscLight.h" />
+    <ClInclude Include="include\Error.h" />
+    <ClInclude Include="include\FileSystem.h" />
+    <ClInclude Include="include\Gecko.h" />
+    <ClInclude Include="include\Global.h" />
+    <ClInclude Include="include\Http.h" />
+    <ClInclude Include="include\Identify.h" />
+    <ClInclude Include="include\IOSMatrix.h" />
+    <ClInclude Include="include\Main.h" />
+    <ClInclude Include="include\Nand.h" />
+    <ClInclude Include="include\Network.h" />
+    <ClInclude Include="include\Nus.h" />
+    <ClInclude Include="include\Patcher.h" />
+    <ClInclude Include="include\rijndael.h" />
+    <ClInclude Include="include\Settings.h" />
+    <ClInclude Include="include\sha1.h" />
+    <ClInclude Include="include\SysCheck.h" />
+    <ClInclude Include="include\SysMenuMatrix.h" />
+    <ClInclude Include="include\System.h" />
+    <ClInclude Include="include\SysTitle.h" />
+    <ClInclude Include="include\Title.h" />
+    <ClInclude Include="include\TmdView.h" />
+    <ClInclude Include="include\Tools.h" />
+    <ClInclude Include="include\UsbStorage.h" />
+    <ClInclude Include="include\Video.h" />
+    <ClInclude Include="include\Wad.h" />
+    <ClInclude Include="include\WiiMote.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="data\Titles.xml" />
+    <None Include="hbc\config\DOP-Mii.cfg" />
+    <None Include="hbc\apps\DOP-Mii\meta.xml" />
+    <None Include="tools\BuildType.sh" />
+    <None Include="tools\MakeSvnRev.sh" />
+    <None Include="PostBuild.sh" />
+    <None Include="PreBuild.sh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

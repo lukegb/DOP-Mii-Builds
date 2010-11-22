@@ -1,0 +1,60 @@
+#!/bin/sh
+
+# assume that:
+# svn checkout http://dop-mii.googlecode.com/svn/trunk/ mainline
+# svn checkout http://dop-mii.googlecode.com/svn/branches/WiiBrewEdition/ wiibrew
+# ---
+# DEVKITPRO IS INSTALLED
+
+echo Cleaning log dir...
+rm -rf logs
+mkdir logs
+
+echo Updating SVN trees \(1/2\)
+cd mainline
+
+make clean
+
+CURVERSION=`svnversion .`
+echo Currently on: $CURVERSION
+
+svn update 2>&1 | tee ../logs/svnlog.mainline.log
+
+NEWVERSION=`svnversion .`
+echo Now on: $NEWVERSION
+
+if [ "$NEWVERSION" == "$CURVERSION" ]; then
+  echo Same SVN revision, not rebuilding
+else
+  make 2>&1 | tee ../logs/buildlog.mainline.log
+fi
+
+
+echo Updating SVN trees \(2/2\)
+cd ../wiibrew
+
+make clean
+
+CURVERSION=`svnversion .`
+echo Currently on: $CURVERSION
+
+svn update 2>&1 | tee ../logs/svnlog.wiibrew.log
+
+NEWVERSION=`svnversion .`
+echo Now on: $NEWVERSION
+
+if [ "$NEWVERSION" == "$CURVERSION" ]; then
+  echo Same SVN revision, not rebuilding
+else
+  make 2>&1 | tee ../logs/buildlog.wiibrew.log
+fi
+
+cd ..
+
+echo Copying across...
+cp -v mainline/mainline.dol wiibrew/wiibrew.dol ../bins/
+
+echo Git committing...
+cd ..
+git add .
+git commit -m "Update with SVN version $NEWVERSION - from $CURVERSION"

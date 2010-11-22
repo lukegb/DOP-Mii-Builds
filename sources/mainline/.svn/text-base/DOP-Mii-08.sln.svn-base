@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DopIOS-MOD", "DOP-Mii.vcproj", "{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}.Debug|Win32.Build.0 = Debug|Win32
+		{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}.Release|Win32.ActiveCfg = Release|Win32
+		{71CC5637-57C6-4795-B0DA-0D3DBE4B9C83}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

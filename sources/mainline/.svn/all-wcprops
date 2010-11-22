@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/144/trunk
+END
+PreBuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/105/trunk/PreBuild.sh
+END
+DOP-Mii.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/103/trunk/DOP-Mii.vcxproj.filters
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/102/trunk/LICENSE.txt
+END
+DOP-Mii.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/102/trunk/DOP-Mii.vcproj
+END
+DOP-Mii.pnproj
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/125/trunk/DOP-Mii.pnproj
+END
+DOP-Mii-10.sln
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/103/trunk/DOP-Mii-10.sln
+END
+DOP-Mii.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/103/trunk/DOP-Mii.vcxproj
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/127/trunk/Makefile
+END
+DOP-Mii.pnps
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/122/trunk/DOP-Mii.pnps
+END
+PostBuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/105/trunk/PostBuild.sh
+END
+DOP-Mii-08.sln
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/102/trunk/DOP-Mii-08.sln
+END

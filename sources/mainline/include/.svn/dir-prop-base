@@ -1,0 +1,8 @@
+K 10
+svn:ignore
+V 31
+svnrev.h
+BuildType.h
+__wpads.h
+
+END

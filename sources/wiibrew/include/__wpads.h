@@ -1,0 +1,1 @@
+#define __WPADS_ADDR 0x000000000
