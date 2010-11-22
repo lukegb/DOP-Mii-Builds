@@ -13,7 +13,6 @@ mkdir logs
 echo Updating SVN trees \(1/2\)
 cd mainline
 
-make clean
 
 CURVERSION=`svnversion .`
 echo Currently on: $CURVERSION
@@ -26,6 +25,7 @@ echo Now on: $NEWVERSION
 if [ "$NEWVERSION" == "$CURVERSION" ]; then
   echo Same SVN revision, not rebuilding
 else
+  make clean
   make 2>&1 | tee ../logs/buildlog.mainline.log
 fi
 
@@ -46,6 +46,7 @@ echo Now on: $NEWVERSION
 if [ "$NEWVERSION" == "$CURVERSION" ]; then
   echo Same SVN revision, not rebuilding
 else
+  make clean
   make 2>&1 | tee ../logs/buildlog.wiibrew.log
 fi
 
@@ -53,6 +54,15 @@ cd ..
 
 echo Copying across...
 cp -v mainline/mainline.dol wiibrew/wiibrew.dol ../bins/
+
+echo Cleaning up:
+cd mainline/
+make clean
+cd ../wiibrew/
+make clean
+
+echo Writing out new version file:
+echo $NEWVERSION > ../bins/SVNversion
 
 echo Git committing...
 cd ..
