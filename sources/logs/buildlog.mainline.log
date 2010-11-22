@@ -1,1 +1,31 @@
-Makefile:7: *** "Please set DEVKITPPC in your environment. export DEVKITPPC=<path to>devkitPPC".  Stop.
+echo /opt/devkitpro/portlibs/ppc
+/opt/devkitpro/portlibs/ppc
+chmod 777 ./tools/MakeSvnRev.sh
+chmod 777 ./tools/BuildType.sh
+chmod 777 ./*Build.sh
+./tools/MakeSvnRev.sh
+SM_ticket.dat
+bin2s -a 32 /home/lukegb/dop-mii-builds/sources/mainline/data/SM_ticket.dat | powerpc-eabi-as -o SM_ticket.dat.o
+echo "extern const u8" `(echo SM_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"_end[];" > `(echo SM_ticket.dat | tr . _)`.h
+echo "extern const u8" `(echo SM_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"[];" >> `(echo SM_ticket.dat | tr . _)`.h
+echo "extern const u32" `(echo SM_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`_size";" >> `(echo SM_ticket.dat | tr . _)`.h
+SU_ticket.dat
+bin2s -a 32 /home/lukegb/dop-mii-builds/sources/mainline/data/SU_ticket.dat | powerpc-eabi-as -o SU_ticket.dat.o
+echo "extern const u8" `(echo SU_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"_end[];" > `(echo SU_ticket.dat | tr . _)`.h
+echo "extern const u8" `(echo SU_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"[];" >> `(echo SU_ticket.dat | tr . _)`.h
+echo "extern const u32" `(echo SU_ticket.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`_size";" >> `(echo SU_ticket.dat | tr . _)`.h
+SU_tmd.dat
+bin2s -a 32 /home/lukegb/dop-mii-builds/sources/mainline/data/SU_tmd.dat | powerpc-eabi-as -o SU_tmd.dat.o
+echo "extern const u8" `(echo SU_tmd.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"_end[];" > `(echo SU_tmd.dat | tr . _)`.h
+echo "extern const u8" `(echo SU_tmd.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"[];" >> `(echo SU_tmd.dat | tr . _)`.h
+echo "extern const u32" `(echo SU_tmd.dat | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`_size";" >> `(echo SU_tmd.dat | tr . _)`.h
+Titles.xml
+bin2s -a 32 /home/lukegb/dop-mii-builds/sources/mainline/data/Titles.xml | powerpc-eabi-as -o Titles.xml.o
+echo "extern const u8" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"_end[];" > `(echo Titles.xml | tr . _)`.h
+echo "extern const u8" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`"[];" >> `(echo Titles.xml | tr . _)`.h
+echo "extern const u32" `(echo Titles.xml | sed -e 's/^\([0-9]\)/_\1/' | tr . _)`_size";" >> `(echo Titles.xml | tr . _)`.h		
+Boot2.cpp
+/home/lukegb/dop-mii-builds/sources/mainline/source/Boot2.cpp:3:20: fatal error: gccore.h: No such file or directory
+compilation terminated.
+make[1]: *** [Boot2.o] Error 1
+make: *** [build] Error 2
